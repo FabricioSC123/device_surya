@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common SparkOS stuff
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/radiant/config/common_full_phone.mk)
 
-PRODUCT_NAME := spark_surya
+PRODUCT_NAME := radiant_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 NFC
