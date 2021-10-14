@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common HentaiOS stuff
-$(call inherit-product, vendor/hentai/config/common_full_phone.mk)
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
-PRODUCT_NAME := hentai_surya
+PRODUCT_NAME := legion_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 NFC
@@ -32,8 +32,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Hentai Dark Wallpeper
-PRODUCT_PACKAGES += HentaiWallpaperDark
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
