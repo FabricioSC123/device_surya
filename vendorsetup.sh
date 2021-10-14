@@ -22,3 +22,6 @@ git -C hardware/qcom-caf/sm8150/display remote add pixel https://github.com/Pixe
 git -C hardware/qcom-caf/sm8150/display fetch pixel && git -C hardware/qcom-caf/sm8150/display checkout pixel/eleven
 # Firmware
 git clone https://gitlab.com/Ardjlon/firmware_xiaomi_surya firmware/xiaomi/surya
+# EVA GCC
+git clone --depth=1 https://github.com/mvaisakh/gcc-arm64 prebuilts/gcc/linux-x86/aarch64/aarch64-elf
+git clone --depth=1 https://github.com/mvaisakh/gcc-arm prebuilts/gcc/linux-x86/arm/arm-eabi
