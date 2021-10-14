@@ -1,7 +1,7 @@
 #vendor
 git clone https://github.com/FabricioSC123/proprietary_vendor_xiaomi_surya.git vendor/xiaomi/surya
 #kernel
-git clone https://github.com/FabricioSC123/kernel_surya.git kernel/xiaomi/surya
+git clone https://github.com/FabricioSC123/kernel_xiaomi_surya-1.git kernel/xiaomi/surya
 #PocoParts
 git clone https://github.com/FabricioSC123/vendor_PocoParts.git vendor/PocoParts
 #VendorSupport
