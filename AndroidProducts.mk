@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/legion_surya.mk
+    $(LOCAL_DIR)/cherish_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    legion_surya-userdebug 
+    cherish_surya-userdebug 
