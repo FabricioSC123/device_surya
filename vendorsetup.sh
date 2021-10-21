@@ -1,7 +1,7 @@
 #vendor
 git clone https://github.com/FabricioSC123/proprietary_vendor_xiaomi_surya.git vendor/xiaomi/surya
 #kernel
-git clone https://github.com/stormbreaker-project/kernel_xiaomi_surya kernel/xiaomi/surya
+git clone https://github.com/dotOS-Devices/android_kernel_xiaomi_surya kernel/xiaomi/surya
 #PocoParts
 git clone https://github.com/FabricioSC123/vendor_PocoParts.git vendor/PocoParts
 #VendorSupport
@@ -18,33 +18,3 @@ git -C hardware/qcom-caf/sm8150/display remote add pixel https://github.com/Pixe
 git -C hardware/qcom-caf/sm8150/display fetch pixel && git -C hardware/qcom-caf/sm8150/display checkout pixel/eleven
 # Firmware
 git clone https://gitlab.com/Ardjlon/firmware_xiaomi_surya firmware/xiaomi/surya
-# EVA GCC
-git clone --depth=1 https://github.com/mvaisakh/gcc-arm64 prebuilts/gcc/linux-x86/aarch64/aarch64-elf
-git clone --depth=1 https://github.com/mvaisakh/gcc-arm prebuilts/gcc/linux-x86/arm/arm-eabi
-#Fix Kernel storm
-cd kernel/xiaomi/surya
-git revert e28dfd2aaba38e0883b6fcf37231ee14e244c54d 
-git add .
-git commit
-git revert 4988721bb60be00e7046de1264334acc3cf9dd17 
-git add .
-git commit
-git revert 3a7a861f01bf47dc6162b810dad48b8895ec85e0 
-git add .
-git commit
-git revert 8e8475087a44da20c1078afbd8fc9878e373a9dc 
-git add .
-git commit
-git revert 81b34dcd608eaef73530d73406ace8997226e2c6 
-git add .
-git commit
-git revert 373a85e58fcf3966a5751ce3f6bf1215e013c6de 
-git add .
-git commit
-git revert 7614a711f798a7517f1ff60546fcbb700873f7f6 
-git add .
-git commit
-#fix changue kernel
-git revert 928212482106338cfd5ad43e9f02d648ba0d0df1
-git add .
-git commit
