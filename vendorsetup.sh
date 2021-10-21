@@ -18,3 +18,7 @@ git -C hardware/qcom-caf/sm8150/display remote add pixel https://github.com/Pixe
 git -C hardware/qcom-caf/sm8150/display fetch pixel && git -C hardware/qcom-caf/sm8150/display checkout pixel/eleven
 # Firmware
 git clone https://gitlab.com/Ardjlon/firmware_xiaomi_surya firmware/xiaomi/surya
+# Proton
+git clone https://github.com/kdrag0n/proton-clang prebuilts/clang/host/linux-x86/clang-13 --depth=1
+touch prebuilts/clang/host/linux-x86/clang-13/AndroidVersion.txt
+echo "13" >> prebuilts/clang/host/linux-x86/clang-13/AndroidVersion.txt
