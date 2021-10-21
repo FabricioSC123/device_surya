@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/descendant_surya.mk
+    $(LOCAL_DIR)/spiceos_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    descendant_surya-userdebug 
+    spiceos_surya-userdebug 
