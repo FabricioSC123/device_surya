@@ -100,6 +100,21 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_surya
 TARGET_RECOVERY_DEVICE_MODULES := libinit_surya
 
 # Kernel
+# HIDL
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := \
+    $(DEVICE_PATH)/configs/hidl/manifest.xml \
+    hardware/qcom-caf/sm8150-surya/media/conf_files/sm6150/c2_manifest.xml
+ODM_MANIFEST_SKUS := surya
+ODM_MANIFEST_SURYA_FILES := \
+    $(DEVICE_PATH)/configs/hidl/manifest-qva.xml \
+    $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
+
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_surya
+TARGET_RECOVERY_DEVICE_MODULES := libinit_surya
+
+# Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
